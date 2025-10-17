@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cannabis Compliance – Chemlato Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #6fa8dc 25%, #8bb8e8 50%, #a2c5ed 75%, #764ba2 100%);
+            --card-bg: rgba(255, 255, 255, 0.95);
+            --accent: #2c3e50;
+            --accent-light: #3498db;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            padding: 32px 16px;
+        }
+
+        .container {
+            max-width: 920px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 24px;
+            box-shadow: 0 30px 60px rgba(15, 23, 42, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            padding: 48px 40px 32px;
+            background: rgba(17, 24, 39, 0.9);
+            color: #f8fafc;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.75rem;
+            letter-spacing: 0.04em;
+        }
+
+        .header .strain {
+            margin-top: 12px;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #facc15;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .grid {
+            display: grid;
+            gap: 22px;
+        }
+
+        @media (min-width: 720px) {
+            .grid.two {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .grid.three {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        .info-card {
+            padding: 24px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, rgba(248, 250, 252, 0.95), rgba(226, 232, 240, 0.85));
+            border: 1px solid rgba(148, 163, 184, 0.3);
+        }
+
+        .label {
+            font-size: 0.85rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #475569;
+        }
+
+        .value {
+            margin-top: 10px;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .coa-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 28px;
+            padding: 14px 24px;
+            border-radius: 999px;
+            background: var(--accent-light);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            transition: transform 180ms ease, box-shadow 180ms ease;
+        }
+
+        .coa-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 30px rgba(37, 99, 235, 0.25);
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(148, 163, 184, 0.4);
+            text-align: center;
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Cannabis Compliance</h1>
+            <div class="strain">Chemlato Test</div>
+        </header>
+        <section class="content">
+            <section class="grid three">
+                <article class="info-card">
+                    <div class="label">Total THC %</div>
+                    <div class="value">84.7</div>
+                </article>
+                <article class="info-card">
+                    <div class="label">THC %</div>
+                    <div class="value">72.1</div>
+                </article>
+                <article class="info-card">
+                    <div class="label">CBD %</div>
+                    <div class="value"><0.01</div>
+                </article>
+            </section>
+
+            <section class="grid two" style="margin-top: 28px;">
+                <article class="info-card">
+                    <div class="label">BioTrack ID</div>
+                    <div class="value">9091 8680 5476 8112</div>
+                </article>
+                <article class="info-card">
+                    <div class="label">Testing Lab</div>
+                    <div class="value">Rio Grande Analytics</div>
+                </article>
+            </section>
+
+            <section class="info-card" style="margin-top: 28px;">
+                <div class="label">Manufactured By</div>
+                <div class="value">FCI of New Mexico</div>
+            </section>
+
+            <section class="grid two" style="margin-top: 22px;">
+                <article class="info-card">
+                    <div class="label">Manufacture Date</div>
+                    <div class="value">2/15/25</div>
+                </article>
+                <article class="info-card">
+                    <div class="label">Expiration Date</div>
+                    <div class="value">9/30/26</div>
+                </article>
+            </section>
+
+            <section class="info-card" style="margin-top: 22px;">
+                <div class="label">Manufacturer License Number</div>
+                <div class="value">22334455</div>
+            </section>
+
+            
+            <a class="coa-button" href="https://drive.google.com/file/d/1Xschf3tWG5i6ZoyqtRxcmAkMKwSfJxfH/view?usp=drive_link" target="_blank" rel="noopener">
+                View Certificate of Analysis
+            </a>
+            
+
+            <footer class="footer">
+                Generated on October 17, 2025 at 10:26 AM
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
